@@ -1,0 +1,382 @@
+@font-face {
+   font-family: Myriad Pro Regular; 
+   src: url('../fonts/Myriad Pro Regular.ttf');
+}
+
+@font-face {
+   font-family: Myriad Pro Bold; 
+   src: url('../fonts/Myriad Pro Bold.ttf');
+} 
+
+@font-face {
+   font-family: Myriad Pro Semibold; 
+   src: url('../fonts/Myriad Pro Semibold.ttf');
+} 
+ 
+body{
+	font-size:1.5em;
+	font-family: 'Myriad Pro Regular', sans-serif;
+	width:100%;
+}
+.circle_link{
+		width:100px;
+		height:100px;
+}
+
+ /*super small screens*/
+@media only screen and (max-width : 320px) {
+	#circle_img{
+		height:250px;
+		width:250px;
+	}
+	.navbar-header {
+		padding:0px;
+		margin:0px;
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+} 
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px){	
+	#circle_img{
+		height:250px;
+		width:250px;
+	}
+	
+	.navbar-header {
+        float: none;
+		padding:0px;
+		margin:0px;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
+/* enlarge the clicky buttons on larger screens
+and make the nav not stack*/
+@media only screen and (min-width : 768px){
+	nav li {
+		display:inline;
+	}
+	.circle_link {
+		width:150px;
+		height:150px;
+	}
+}
+
+
+
+/*========*/
+/*ANCHORS*/
+a{
+	color:#635ea6;
+}
+a:hover{
+	opacity: 0.8;
+    color:#d5801c 
+}
+
+/*========*/
+/*HEADER STYLES*/
+/*========*/
+
+header{
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#main_logo{
+	width:150px;
+	height:75px;
+}
+
+/*nav*/
+nav{
+    font-family:Myriad Pro Semibold;
+	text-decoration:none;
+  
+}
+nav li{
+    text-align:right;
+    margin-bottom:1px;
+    margin-bottom:1px;
+	margin-left:5px;
+	margin-right:5px;
+	text-decoration:none;
+    list-style-type:none;
+	
+}
+
+.underlined:hover{
+	text-decoration:none;
+	border-bottom: 1px solid black;
+	padding-bottom:3px;
+}
+
+.navbar-default{
+	background-color:white;
+}
+
+/*========
+FOOTER STYLES
+=========*/
+#footer{
+	background-color:#2b2b2f;
+    color:#ffffff;
+
+}
+
+footer{
+	padding-top:10px;
+	width:100%;	
+}
+footer p {
+    font-family:Myriad Pro Bold;
+	text-align:center;
+	margin:2px;
+}
+footer a{
+    font-family:Myriad Pro Bold;
+    color:#ffffff;
+    text-decoration:none;
+}
+footer h3{
+    margin:0;
+}
+footer a:hover{
+    text-decoration:none;
+    color:#d5801c 
+}
+
+footer ul {
+	text-transform:uppercase;
+}
+footer li {
+    text-decoration:none;
+}
+
+/*========
+HERO BANNERS
+========*/
+
+.hero{
+	width:100%;
+	color:white;
+	margin:0 auto;
+	padding:10px 0 0 0;
+	display:block;
+}
+#hero_image_1{
+    padding-top:20px;
+	padding-bottom:20px;
+	display:block;
+	width:100%;
+	min-height:335px;
+	background-image:url("../img/images/img_hero-1.jpg");
+	background-repeat:no-repeat;
+	background-position:center center;
+    font-size:1em;
+}
+#hero_image_1 a {
+    font-family:Myriad Pro Bold;
+    color:#d5801c   ;
+}
+
+#hero_image_2{
+    padding-top:20px;
+	padding-bottom:20px;
+	display:block;
+	width:100%;
+	min-height:550px;
+	background-image:url("../img/images/img_hero-2.jpg");
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+#hero_image_3{
+    padding-top:20px;
+	padding-bottom:20px;
+    text-align:center;
+	display:block;
+	width:100%;
+	min-height:175px;
+	background-image:url("../img/images/img_hero-3.jpg");
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+/*========
+LANDING PAGE
+=========*/
+
+#landing_support{
+	font-size:1.5em;
+}
+
+#landing_about{
+	display:block;
+	background-color:white;
+	line-height:35px;
+	text-align:center;
+}
+
+#landing_about div h2{
+    font-size:35px; 
+}
+
+
+/***********
+VOLUNTEER PAGE
+***************/
+#volunteer_container{
+    line-height: 27px;
+    color:#19344a;
+}
+#volunteer_container h3{
+    font-family:Myriad Pro Bold; 
+}
+#volunteer_container a{
+    color:#d5801c;
+}
+
+/***********
+CONTACT PAGE
+***************/
+#contact_container{
+    
+}
+
+/***********
+DONATE PAGE
+***************/
+#donate_container{
+}
+
+/***********
+PROGRAMS PAGE
+***************/
+#program_container{
+}
+.list-group-item{
+    background-color:rgba(1,1,1,.1);
+    display:block;
+}
+.head{
+    font-weight: bolder;
+    color:darkblue;
+}
+.subhead{
+    font-weight:bold;
+}
+
+/**********
+VIDEO PLAYER
+**********/
+.youtube-video-wrap{
+    width:80%;
+    max-width: 768px;
+    margin: 0 auto;
+}
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+
+/*MISC*/
+.container {
+	margin: 0 auto;
+    text-align:center;
+}
+.badge{
+    background-color:#d5801c;
+}
+.shadow{
+    box-shadow: -5px 0 5px -5px rgba(50,50,50,0.4), 5px 0 5px -5px rgba(50,50,50,0.4);
+}
+li{
+    list-style-type: none;
+}
+
+.outer_space{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.inner_space{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.row-fluid{text-align:center;}
+.img-responsive{margin:0 auto}

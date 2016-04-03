@@ -1,0 +1,309 @@
+/* BOOTSTRAP 3.x GLOBAL STYLES
+-------------------------------------------------- */
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	background-color:#001A3F;
+	color:white;
+	/*color: #5a5a5a;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+                  Helvetica, Arial, "Lucida Grande", sans-serif;*/
+	font-family: Arial, "Lucida Grande", sans-serif;
+	margin: 0 auto;  /*the auto value on the sides, coupled with the width, centers the layout */
+	/*border-radius: 25px;*/
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-left:10px;
+}
+
+.container {
+	/*margin-left:3px;*/
+	background-color:#787272;
+	/*padding:10px;*/
+	border:2px;
+	width: 975px;
+	margin: 0 auto;  /*the auto value on the sides, coupled with the width, centers the layout */
+	border-radius: 25px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;/**/
+}
+
+a {
+	color: black;
+}
+
+.head {
+	color: #006;
+	font-family:"Comic Sans MS", cursive, Arial, "Lucida Grande", sans-serif;
+}
+
+.subhead {
+	color: #009;
+}
+
+.teamname {
+	color: #006;
+	font-family:"Comic Sans MS", cursive, Arial, "Lucida Grande", sans-serif;
+	font-size:medium;
+}
+
+.btn {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+
+.btn-primary {
+	background-color:#001A3F; 
+	border-color:#001A3F;
+}
+
+.btn-primary:hover/*,
+.btn-prim:focus,
+.btn-prim:active,
+.btn-prim.active*/ {
+	background-color:#2C3D4E;
+    border-color: red;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+	position: absolute;
+	top: 0;
+	left: 20;
+	right: 0;
+	z-index: 10;
+}
+/*RPR*/
+.navbar-inverse {
+	/*background-color: #F7F7F7;
+	background: rgba(255,255,255,0);
+	background-color: #0B1164;*/
+	background-color:#2C3D4E;
+	border-color: transparent;
+	background-image: none;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { /*link hover (when hovering over item)*/
+	/*background-color: #FFFFFF;*/
+	background: rgba(255,255,255,0.4);
+}
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { /*active link*/
+	/*background-color: #E6B5A1;*/
+	background: rgba(255,255,255,0.4);
+}
+.dropdown-menu { /*dropdown link*/
+	/*background-color: #F7F7F7;*/
+	background: rgba(0,0,0,0.1);
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { /*active link*/
+	/*background-color: #333;
+	font-weight:bold;*/
+	background: rgba(255,255,255,0.4);
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+	background-image: none;
+}
+.navbar-inverse .navbar-brand {
+	color: #F7F7F7;
+	margin-top:-15px;
+	margin-bottom:-15px;
+}
+.navbar-inverse .navbar-brand:hover {
+	color: #FFFFFF
+}
+.navbar-inverse .navbar-nav>li>a { /*nav link (letters on nav)*/
+	color: #FFF;
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { /*font nav link hover*/
+	color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { /*active link*/
+	/*color: #000;
+	font-weight:bold;*/
+}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { /*active link hover*/
+	color: #FFFFFF
+}
+.dropdown-menu>li>a { /*dropdown link*/
+	color: #333;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { /*dropdown link hover*/
+	color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { /*dropdown caret*/
+	border-top-color: #999999;
+}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { /*dropdown caret active*/
+	border-top-color: #FFFFFF;
+}
+
+.headcontainer {
+	background-color:#001A3F;
+	width: 950px;
+	height:300px;
+	margin-top:-20px;
+	/*margin: 0 auto;  the auto value on the sides, coupled with the width, centers the layout */
+	/*border-radius: 25px;*/
+}
+
+.smalltext {
+	font-size:small;
+	color:#666;
+}
+
+.progbackground {
+	/*background-color:black;*/
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #555555;
+  cursor: default;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-bottom-color: transparent;
+} 
+/*end RPR*/
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+	margin-bottom: 20px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+	z-index: 1;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+	height: 300px;
+	width: 950px;
+	background-color: #2C3D4E;
+}
+.carousel img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 300px;
+}
+.carousel-indicators {
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.marketing h2 {
+	font-weight: normal;
+}
+.marketing .col-lg-4 p {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+	margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+	padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+	overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+	margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+	margin-right: 40px;
+}
+.featurette-image.pull-right {
+	margin-left: 40px;
+}
+/* Thin out the marketing headings */
+.featurette-heading {
+	font-size: 50px;
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -1px;
+}
+.footer {
+	/*background-color: #F5F5F5;*/
+	background-color:#2C3D4E;
+	padding: 20px;
+	border-radius: 10px;
+	color:white;
+}
+.mission {
+	font-size: 16px;
+	color: #001A3F;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+/* Remve the edge padding needed for mobile */
+.marketing {
+	padding-left: 0;
+	padding-right: 0;
+}
+/* Navbar positioning foo */
+.navbar-wrapper {
+	margin-top: 20px;
+	margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+/* The navbar becomes detached from the top, so we round the corners */
+.navbar-wrapper .navbar {
+	border-radius: 4px;
+}
+/* Bump up size of carousel content */
+.carousel-caption p {
+	margin-bottom: 20px;
+	font-size: 21px;
+	line-height: 1.4;
+}
+}
+/*
+body {
+	background-color:#F29D35;
+}
+
+.container {
+	background-color:#F2C641;
+}
+
+.navbar-inverse {
+	background-color:#F2B035;
+}
+
+.carousel .item {
+	background-color: #F2B035;
+}
+
+.footer {
+	background-color:#F2B035;
+}*/
